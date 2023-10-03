@@ -13,7 +13,6 @@ Provides a Rancher v2 Node Pool resource. This can be used to create Node Pool, 
 resource "rancher2_cluster" "foo-custom" {
   name = "foo-custom"
   description = "Foo rancher2 custom cluster"
-  kind = "rke"
   rke_config {
     network {
       plugin = "canal"
